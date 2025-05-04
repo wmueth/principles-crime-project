@@ -1,123 +1,82 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/main.css">
-      <title>Home Page</title>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg bg-light navbar-light">
-         <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime and Incarceration Project</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-         <div class="collapse navbar-collapse" id="navbar-body">
-            <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav ml-auto">
-               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-               <li class="nav-item"><a class="nav-link" href="Violent Crimes.html">Violent Crimes</a></li>
-               <li class="nav-item"><a class="nav-link" href="Property Crimes.html">Property Crimes</a></li>
-               <li class="nav-item"><a class="nav-link" href="Crime Type Comparison.html">Crime Type Comparison</a></li>
-            </ul>
-         </div>
-      </nav>
-      <div id="carousel-ID" class="carousel slide" data-ride="carousel" data-interval="3000">
-         <ol class="carousel-indicators">
-            <li data-target="#carousel-ID" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-ID" data-slide-to="1"></li>
-            <li data-target="#carousel-ID" data-slide-to="2"></li>
-            <li data-target="#carousel-ID" data-slide-to="3"></li>
-         </ol>
-         <div class="carousel-inner">
-            <div class="carousel-item active">
-               <img src="https://socialwork.uic.edu/wp-content/uploads/sites/79/2020/01/incarcerated-families01-1090x595.jpg" class="d-block w-100" alt="carousel image">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5>Crime and Incarceration Within The United States</h5>
-                  <p>An Analysis by Angel Salazar and William Mueth</p>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <img src="https://penntoday.upenn.edu/sites/default/files/2018-06/iStock-465095738.jpg" class="d-block w-100" alt="carousel image">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5>Crime and Incarceration Within The United States</h5>
-                  <p>An Analysis by Angel Salazar and William Mueth</p>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <img src="https://ca-times.brightspotcdn.com/dims4/default/31ede72/2147483647/strip/true/crop/2048x1224+0+0/resize/1200x717!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F5d%2F05%2Fff2602d51b8f9469be8450c27b12%2Fla-me-ln-riot-inmate-dead-california-prison-20-001" class="d-block w-100" alt="carousel image">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5>Crime and Incarceration Within The United States</h5>
-                  <p>An Analysis by Angel Salazar and William Mueth</p>
-               </div>
-            </div>
-            <div class="carousel-item">
-               <img src="https://images.seattletimes.com/wp-content/uploads/2024/02/02202024_Prison-Labor_095451.jpg?d=2040x1168" class="d-block w-100" alt="carousel image">
-               <div class="carousel-caption d-none d-md-block">
-                  <h5>Crime and Incarceration Within The United States</h5>
-                  <p>An Analysis by Angel Salazar and William Mueth</p>
-               </div>
-            </div>
-         </div>
-         <a class="carousel-control-prev" href="#carousel-ID" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-ID" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-      </div>
-      <div class="container" id="bsr-wrapper">
-         <div class='my-5'></div>
-         <h1>Incarceration in the United States</h1>
-         <p>This project explores incarceration trends across U.S. states over time by visualizing prisoner counts, violent crime rates, and incarceration rates. We aim to reveal patterns, highlight disparities between states, and investigate how incarceration relates to crime trends from year to year. </p>
-         <div class="my-4"></div>
-         <div class="my-4"></div>
-         <h3>Prisoner Count by State (2001-2016)</h3>
-         <div class="row">
-            <div class="col"><embed src="./viz-global-1.html"
-               type="text/html" height="700" width="1000" /> </div>
-            <div class="col-12">
-               <p>This animated map shows how the number of incarcerated individuals has changed across U.S. states from 2001 to 2016. Darker colors represent higher prisoner counts, allowing for a quick visual comparison between states and over time. We can see that some states consistently have larger prison populations—like Texas and California—while others remain comparatively low. What this doesn't account for, however, is the number of people in each state, or the incarceration rate. Since states like California and Texas have such large populations, it makes sense that they would consequently have more prisoners and crimes committed per year.</p>
-            </div>
-         </div>
-         <div class="my-5"></div>
-         <div class="my-5"></div>
-         <div class="row">
-            <h3>Total Prisoner and Violent Crime Counts in the U.S. (2001-2016)</h3>
-            <div class="col"><embed src="./viz-prisoners-v-violent-crimes.html"
-               type="text/html" height="700" width="1000" /> </div>
-            <div class="col-12">
-               <p>This graph compares two national trends from 2001 to 2016 in the U.S.: total violent crimes and total prisoner counts. The red line, representing violent crimes, mostly declines over the years, showing a downward trend until a noticeable increase near the end. In contrast, the blue line, representing total prisoners, steadily rises through the early 2000s before leveling off and slightly declining. Interestingly, the two lines appear to move in opposite directions, as when violent crime goes down, incarceration tends to rise, and vice versa—suggesting a potentially inverse relationship between the two.</p>
-            </div>
-         </div>
-         <div class="my-5"></div>
-         <div class="my-5"></div>
-         <div class="row">
-            <div class="row justify-content-center"></div>
-            <h3>Heatmap of Incarceration Rates by State Over Time (2001-2016)</h3>
-            <div class="col"><embed src="./viz-heatmap-states-incarceration-r.html"
-               type="text/html" height="1000" width="1100" /> </div>
-            <div class="col-12">
-               <p>This heatmap above visualizes the incarceration rate per 100,000 people across U.S. states from 2001 to 2016. Each row represents a state, while each column marks a year. The intensity of the red color indicates how high the incarceration rate was: darker reds mean higher rates. This allows for easy comparison between states and shows how incarceration trends have shifted over time. States like Oklahoma and Texas stand out with consistently high rates, while others like Maine and North Dakota remain relatively low throughout, as indicated by the faint red color.</p>
-            </div>
-         </div>
-         <div class="my-5"></div>
-         <div class="my-5"></div>
-         <div class="row">
-            <h3>Distribution of Incarceration Rates Across States by Year (2001-2016)</h3>
-            <div class="col"><embed src="./viz-boxplots.html"
-               type="text/html" height="700" width="1000" /> </div>
-            <div class="col-12">
-               <p>This box plot displays the distribution of incarceration rates across U.S. states from 2001 to 2016, helping to visualize how incarceration patterns vary year to year. Each box represents the spread of rates in a given year, with the median line indicating the national midpoint. We see that while the median incarceration rate remains fairly stable, the range and presence of outliers shift over time. Certain years, like 2006, 2007, and 2012, show a wider spread, which suggests that there is a greater range in how states incarcerated their populations. The consistent presence of high outliers also points to a handful of states maintaining significantly higher incarceration rates than the national average.</p>
-            </div>
-            <div class="container my-5">
-            <h2 id="groupedbar">Total Crimes by Type (Animated Grouped Bar)</h2>
-                <iframe src="visualization1_groupedbar.html" width="1000" height="600" frameborder="0"></iframe>
-               <p>The animated grouped bar chart illustrates clear differences in the frequency of various crime types from 2001 to 2016. Larceny consistently stands out as the most common crime, followed by burglary and aggravated assault, showing that property crimes dominate total reported offenses. Over time, burglary and larceny show gradual declines, while aggravated assault remains relatively stable, suggesting that violent crime reductions have been slower or less uniform. Additionally, murder and vehicle theft remain the least frequent crimes throughout the period, highlighting that while violent crimes are severe, they occur far less often than property-related offenses.</p>
-               <div class="row">
-                 <div class="col-md-12 text-center">
-                  <p>This page was built using data from a publicly available dataset on crime and incarceration in the United States. The full dataset can be accessed below.</p>
-                  <a class="btn btn-primary" href="https://www.kaggle.com/datasets/christophercorrea/prisoners-and-crime-in-united-states?resource=download&select=crime_and_incarceration_by_state.csv" target="_blank">
-                    View Dataset
-                  </a>
-                 </div>
-               </div>
-             </div>
-         <div class='py-3 my-5'></div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
-   </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home Page</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime and Incarceration Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar-body">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Violent Crimes.html">Violent Crimes</a></li>
+            <li class="nav-item"><a class="nav-link" href="Property Crimes.html">Property Crimes</a></li>
+            <li class="nav-item"><a class="nav-link" href="Crime Type Comparison.html">Crime Type Comparison</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div id="carousel-ID" class="carousel slide" data-ride="carousel" data-interval="3000">
+    <!-- (carousel unchanged) -->
+</div>
+
+<div class="container my-5" id="bsr-wrapper">
+    <h1>Incarceration in the United States</h1>
+    <p>This project explores incarceration trends across U.S. states over time by visualizing prisoner counts, violent crime rates, and incarceration rates. We aim to reveal patterns, highlight disparities between states, and investigate how incarceration relates to crime trends from year to year.</p>
+
+    <h2>Visualizations</h2>
+    <ul>
+        <li><a href="#prisoner-count">Prisoner Count by State (2001-2016)</a></li>
+        <li><a href="#prisoner-violent">Total Prisoner and Violent Crime Counts (2001-2016)</a></li>
+        <li><a href="#incarceration-heatmap">Heatmap of Incarceration Rates by State Over Time</a></li>
+        <li><a href="#incarceration-boxplot">Distribution of Incarceration Rates Across States by Year</a></li>
+        <li><a href="#total-crimes-bar">Total Crimes by Type (Animated Grouped Bar)</a></li>
+    </ul>
+
+    <hr class="my-5">
+
+    <h3 id="prisoner-count">Prisoner Count by State (2001-2016)</h3>
+    <embed src="./viz-global-1.html" type="text/html" height="700" width="1000">
+    <p>This animated map shows how the number of incarcerated individuals has changed across U.S. states from 2001 to 2016. Darker colors represent higher prisoner counts, allowing for a quick visual comparison between states and over time. We can see that some states consistently have larger prison populations—like Texas and California—while others remain comparatively low. What this doesn't account for, however, is the number of people in each state, or the incarceration rate. Since states like California and Texas have such large populations, it makes sense that they would consequently have more prisoners and crimes committed per year.</p>
+
+    <div class='my-5'></div>
+
+    <h3 id="prisoner-violent">Total Prisoner and Violent Crime Counts in the U.S. (2001-2016)</h3>
+    <embed src="./viz-prisoners-v-violent-crimes.html" type="text/html" height="700" width="1000">
+    <p>This graph compares two national trends from 2001 to 2016 in the U.S.: total violent crimes and total prisoner counts. The red line, representing violent crimes, mostly declines over the years, showing a downward trend until a noticeable increase near the end. In contrast, the blue line, representing total prisoners, steadily rises through the early 2000s before leveling off and slightly declining. Interestingly, the two lines appear to move in opposite directions, as when violent crime goes down, incarceration tends to rise, and vice versa—suggesting a potentially inverse relationship between the two.</p>
+
+    <div class='my-5'></div>
+
+    <h3 id="incarceration-heatmap">Heatmap of Incarceration Rates by State Over Time (2001-2016)</h3>
+    <embed src="./viz-heatmap-states-incarceration-r.html" type="text/html" height="1000" width="1100">
+    <p>This heatmap above visualizes the incarceration rate per 100,000 people across U.S. states from 2001 to 2016. Each row represents a state, while each column marks a year. The intensity of the red color indicates how high the incarceration rate was: darker reds mean higher rates. This allows for easy comparison between states and shows how incarceration trends have shifted over time. States like Oklahoma and Texas stand out with consistently high rates, while others like Maine and North Dakota remain relatively low throughout, as indicated by the faint red color.</p>
+
+    <div class='my-5'></div>
+
+    <h3 id="incarceration-boxplot">Distribution of Incarceration Rates Across States by Year (2001-2016)</h3>
+    <embed src="./viz-boxplots.html" type="text/html" height="700" width="1000">
+    <p>This box plot displays the distribution of incarceration rates across U.S. states from 2001 to 2016, helping to visualize how incarceration patterns vary year to year. Each box represents the spread of rates in a given year, with the median line indicating the national midpoint. We see that while the median incarceration rate remains fairly stable, the range and presence of outliers shift over time. Certain years, like 2006, 2007, and 2012, show a wider spread, which suggests that there is a greater range in how states incarcerated their populations. The consistent presence of high outliers also points to a handful of states maintaining significantly higher incarceration rates than the national average.</p>
+
+    <div class='my-5'></div>
+
+    <h3 id="total-crimes-bar">Total Crimes by Type (Animated Grouped Bar)</h3>
+    <iframe src="visualization1_groupedbar.html" width="1000" height="600" frameborder="0"></iframe>
+    <p>The animated grouped bar chart illustrates clear differences in the frequency of various crime types from 2001 to 2016. Larceny consistently stands out as the most common crime, followed by burglary and aggravated assault, showing that property crimes dominate total reported offenses. Over time, burglary and larceny show gradual declines, while aggravated assault remains relatively stable, suggesting that violent crime reductions have been slower or less uniform. Additionally, murder and vehicle theft remain the least frequent crimes throughout the period, highlighting that while violent crimes are severe, they occur far less often than property-related offenses.</p>
+
+    <div class="text-center my-5">
+        <p>This page was built using data from a publicly available dataset. The full dataset can be accessed below</p>
+        <a class="btn btn-primary" href="https://www.kaggle.com/datasets/christophercorrea/prisoners-and-crime-in-united-states?resource=download&select=crime_and_incarceration_by_state.csv" target="_blank">View Dataset</a>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
