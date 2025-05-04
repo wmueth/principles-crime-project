@@ -1,82 +1,88 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/main.css">
-      <title>Comparison</title>
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg bg-light navbar-light">
-         <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime and Incarceration Project</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-         <div class="collapse navbar-collapse" id="navbar-body">
-            <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav ml-auto">
-               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-               <li class="nav-item"><a class="nav-link" href="Violent Crimes.html">Violent Crimes</a></li>
-               <li class="nav-item"><a class="nav-link" href="Property Crimes.html">Property Crimes</a></li>
-               <li class="nav-item"><a class="nav-link" href="Crime Type Comparison.html">Crime Type Comparison</a></li>
-            </ul>
-         </div>
-      </nav>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Comparison</title>
+</head>
+<body>
 
-      <div class="container" id="bsr-wrapper">
+<nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime and Incarceration Project</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar-body">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="Violent Crimes.html">Violent Crimes</a></li>
+            <li class="nav-item"><a class="nav-link" href="Property Crimes.html">Property Crimes</a></li>
+            <li class="nav-item"><a class="nav-link" href="Crime Type Comparison.html">Crime Type Comparison</a></li>
+        </ul>
+    </div>
+</nav>
 
-         <div class='my-5'></div>
+<div class="container" id="bsr-wrapper">
 
-         <h1>Crime Type Comparison</h1>
-         <p>This page serves to compare the various crime types committed across the United States to one another. By visualizing the overall proportions, we can better understand which crimes happen most often, and which states stand out as outliers in terms of crime volume or patterns. This perspective enables more informed decision-making around public safety strategies and resource allocation.</p>
+    <div class='my-5'></div>
 
-         <div class='my-5'></div>
+    <h1>Crime Type Comparison</h1>
+    <p>This page serves to compare the various crime types committed across the United States to one another. By visualizing the overall proportions, we can better understand which crimes happen most often, and which states stand out as outliers in terms of crime volume or patterns. This perspective enables more informed decision-making around public safety strategies and resource allocation</p>
 
-         <h3>Crime Type Distribution in 2016</h3>
-         <div class="col">
-            <embed src="./viz-violent-and-prop-piechart.html" type="text/html" height="700" width="1000" />
-         </div>
-         <p>This pie chart shows the distribution of different crime types committed in the United States in 2016. The most striking insight is that larceny makes up the vast majority of reported crimes, accounting for over 62% of the total. This suggests that property crimes like theft are far more common than violent crimes. Burglary and aggravated assault follow, making up approximately 17% and 9% respectively. Vehicle theft and robbery are less common, while murder and manslaughter account for only a tiny fraction—less than 1%.</p>
+    <h2>Visualizations</h2>
+    <ul>
+        <li><a href="#distribution-2016">Crime Type Distribution in 2016</a></li>
+        <li><a href="#distribution-state">Crime Type Distribution by State in 2016</a></li>
+        <li><a href="#distribution-adjusted">Crime Type Distribution by State in 2016 (Adjusted per 100k)</a></li>
+        <li><a href="#scatter-3d">3D Scatter Plot of Crime Rates and Incarceration</a></li>
+        <li><a href="#scatter-assault-robbery">Aggravated Assault vs Robbery by State (Animated Scatter)</a></li>
+    </ul>
 
-         <div class='my-5'></div>
+    <hr class="my-5">
 
-         <h3>Crime Type Distribution by State in 2016</h3>
-         <div class="my-5"></div>
-         <div class="d-flex justify-content-center">
-            <embed src="./viz-scatter-all-crime.html" type="text/html" height="700" width="2000" style="display: block;" />
-         </div>
-         <p>This scatter plot shows the distribution of different crime types across each U.S. state in 2016. From the chart, it's clear that larceny dominates in volume, with especially high counts in states like California, Texas, and New York. Meanwhile, crimes like murder and robbery occur far less frequently but are still present in every jurisdiction.</p>
+    <h3 id="distribution-2016">Crime Type Distribution in 2016</h3>
+    <div class="col">
+        <embed src="./viz-violent-and-prop-piechart.html" type="text/html" height="700" width="1000" />
+    </div>
+    <p>This pie chart shows the distribution of different crime types committed in the United States in 2016. The most striking insight is that larceny makes up the vast majority of reported crimes, accounting for over 62% of the total. This suggests that property crimes like theft are far more common than violent crimes. Burglary and aggravated assault follow, making up approximately 17% and 9% respectively. Vehicle theft and robbery are less common, while murder and manslaughter account for only a tiny fraction—less than 1%.</p>
 
-         <div class='my-5'></div>
+    <div class='my-5'></div>
 
-         <h3>Crime Type Distribution by State in 2016 (Adjusted per 100k)</h3>
-         <div class="my-5"></div>
-         <div class="d-flex justify-content-center">
-            <embed src="./viz-scatter-all-crime-adjusted.html" type="text/html" height="700" width="2000" style="display: block;" />
-         </div>
-         <p>This adjusted scatter plot displays crime rates per 100,000 residents across all U.S. states in 2016. While similar to the previous chart, this version accounts for differences in population size, making state-by-state comparisons more meaningful.</p>
+    <h3 id="distribution-state">Crime Type Distribution by State in 2016</h3>
+    <div class="d-flex justify-content-center">
+        <embed src="./viz-scatter-all-crime.html" type="text/html" height="700" width="2000" style="display: block;" />
+    </div>
+    <p>This scatter plot shows the distribution of different crime types across each U.S. state in 2016. From the chart, it's clear that larceny dominates in volume, with especially high counts in states like California, Texas, and New York. Meanwhile, crimes like murder and robbery occur far less frequently but are still present in every jurisdiction.</p>
 
-         <div class='my-5'></div>
+    <div class='my-5'></div>
 
-         <h3>3D Scatter Plot of Crime Rates and Incarceration</h3>
-         <div class="col">
-            <embed src="./viz-3d-crimes.html" type="text/html" height="700" width="1000" />
-         </div>
-         <p>This 3D scatter plot visualizes the relationship between violent crime rates, property crime rates, and incarceration rates across U.S. states. This visualization helps identify correlations and regional patterns.</p>
+    <h3 id="distribution-adjusted">Crime Type Distribution by State in 2016 (Adjusted per 100k)</h3>
+    <div class="d-flex justify-content-center">
+        <embed src="./viz-scatter-all-crime-adjusted.html" type="text/html" height="700" width="2000" style="display: block;" />
+    </div>
+    <p>This adjusted scatter plot displays crime rates per 100,000 residents across all U.S. states in 2016. While similar to the previous chart, this version accounts for differences in population size, making state-by-state comparisons more meaningful.</p>
 
-         <div class='my-5'></div>
+    <div class='my-5'></div>
 
-         <h3>Aggravated Assault vs Robbery by State (Animated Scatter)</h3>
-         <div class="d-flex justify-content-center">
-            <iframe src="visualization5_scatter.html" width="1000" height="600" frameborder="0"></iframe>
-         </div>
-         <p>The animated scatter plot reveals that aggravated assault consistently occurs in far higher numbers than robbery across all U.S. states. Most states cluster near the lower end of robbery counts, but show wide variation in aggravated assault levels. Over time, robbery rates generally declined or remained steady, while aggravated assault fluctuated more, suggesting it is a more persistent issue.</p>
+    <h3 id="scatter-3d">3D Scatter Plot of Crime Rates and Incarceration</h3>
+    <div class="col">
+        <embed src="./viz-3d-crimes.html" type="text/html" height="700" width="1000" />
+    </div>
+    <p>This 3D scatter plot visualizes the relationship between violent crime rates, property crime rates, and incarceration rates across U.S. states. This visualization helps identify correlations and regional patterns.</p>
 
-         <div class='my-5'></div>
+    <div class='my-5'></div>
 
-      </div>
+    <h3 id="scatter-assault-robbery">Aggravated Assault vs Robbery by State (Animated Scatter)</h3>
+    <div class="d-flex justify-content-center">
+        <iframe src="visualization5_scatter.html" width="1000" height="600" frameborder="0"></iframe>
+    </div>
+    <p>The animated scatter plot reveals that aggravated assault consistently occurs in far higher numbers than robbery across all U.S. states. Most states cluster near the lower end of robbery counts, but show wide variation in aggravated assault levels. Over time, robbery rates generally declined or remained steady, while aggravated assault fluctuated more, suggesting it is a more persistent issue.</p>
 
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-   </body>
+    <div class='my-5'></div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
