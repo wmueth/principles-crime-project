@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Comparison</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime and Incarceration Project</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="Violent Crimes.html">Violent Crimes</a></li>
+               <li class="nav-item"><a class="nav-link" href="Property Crimes.html">Property Crimes</a></li>
+               <li class="nav-item"><a class="nav-link" href="Crime Type Comparison.html">Crime Type Comparison</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'></div>
+         <h1>Crime Type Comparison</h1>
+         <p>This page serves to compare the various crime types committed across the United States to one another. By visualizing the overall proportions, we can better understand which crimes happen most often, and which states stand out as outliers in terms of crime volume or patterns. This perspective enables more informed decision-making around public safety strategies and resource allocation.</p>
+         <div class='my-5'></div>
+         <h3>Crime Type Distribution in 2016</h3>
+         <div class="col"><embed src="./viz-violent-and-prop-piechart.html"
+            type="text/html" height="700" width="1000" /> </div>
+         <p>This pie chart shows the distribution of different crime types committed in the United States in 2016. The most striking insight is that larceny makes up the vast majority of reported crimes, accounting for over 62% of the total. This suggests that property crimes like theft are far more common than violent crimes. Burglary and aggravated assault follow, making up approximately 17% and 9% respectively. Vehicle theft and robbery are less common, while murder and manslaughter account for only a tiny fraction—less than 1%. Overall, this visualization highlights that while violent crimes receive significant attention, the bulk of criminal activity involves non-violent property offenses.</p>
+         <div class='my-5'></div>
+         <h3>Crime Type Distribution by State in 2016</h3>
+         <div class='my-5'></div>
+         <div class="d-flex justify-content-center">
+            <embed src="./viz-scatter-all-crime.html"
+                   type="text/html"
+                   height="700"
+                   width="2000"
+                   style="display: block;" />
+          </div>
+         <div class='my-5'></div>
+         <p>This scatter plot shows the distribution of different crime types across each U.S. state in 2016. Each colored marker represents a specific crime—such as larceny, burglary, or aggravated assault—and the vertical position indicates how many incidents of that crime were reported in each state. From the chart, it's clear that larceny dominates in volume, with especially high counts in states like California, Texas, and New York. Meanwhile, crimes like murder and robbery occur far less frequently but are still present in every jurisdiction. This visualization helps highlight not just which crimes are most common overall, but also how crime patterns differ from state to state.</p>
+         <div class='my-5'></div>
+         <h3>Crime Type Distribution by State in 2016 (Adjusted per 100k)</h3>
+         <div class='my-5'></div>
+         <div class="d-flex justify-content-center">
+            <embed src="./viz-scatter-all-crime-adjusted.html"
+                   type="text/html"
+                   height="700"
+                   width="2000"
+                   style="display: block;" />
+          </div>
+         <div class='my-5'></div>
+         <p>This adjusted scatter plot displays crime rates per 100,000 residents across all U.S. states in 2016, broken down by crime type. While it looks similar to the previous chart, which showed raw crime counts, this version accounts for differences in state population size—making comparisons between states more meaningful. For instance, although states like California and Texas have high overall crime numbers due to their large populations, their per-capita crime rates may not be the highest. This chart helps spotlight places with disproportionately high crime relative to population, providing a clearer picture of where crime is more concentrated on a per-person basis.</p>
+         <div class='my-5'></div>
+         <h3>3D Scatter Plot of Crime Rates and Incarceration</h3>
+         <div class="col"><embed src="./viz-3d-crimes.html"
+        height="700" width="1000" /> </div>
+         <p>This 3D scatter plot visualizes the relationship between violent crime rates, property crime rates, and incarceration rates across U.S. states, with each point representing a state. The axes show per capita rates (per 100,000 residents), while color indicates the total population of each state—ranging from dark (low population) to bright yellow (high population). This visualization allows us to spot potential correlations: for example, whether higher crime rates are associated with higher incarceration rates, or whether states with larger populations follow different patterns.</p>
+         <div class='my-5'></div>      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
