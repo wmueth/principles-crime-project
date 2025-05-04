@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Property Crimes</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime and Incarceration Project</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="Violent Crimes.html">Violent Crimes</a></li>
+               <li class="nav-item"><a class="nav-link" href="Property Crimes.html">Property Crimes</a></li>
+               <li class="nav-item"><a class="nav-link" href="Crime Type Comparison.html">Crime Type Comparison</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'></div>
+         <h1>Property Crimes</h1>
+         <p>This page explores property crime trends across the United States, focusing on offenses such as larceny, burglary, and vehicle theft. By visualizing crime counts and rates by state, as well as analyzing proportions and temporal trends, the goal is to highlight regional patterns and the relative frequency of each crime type.</p>
+         <div class='my-5'></div>
+         <h3>Trends in Property Crime Counts (2001-2016)</h3>
+         <div class="d-flex justify-content-center">
+            <embed src="./viz-facet_property.html"
+                   type="text/html"
+                   height="700"
+                   width="2000"
+                   style="display: block;" />
+          </div>
+         <p>This faceted line chart tracks national counts of three major property crimes—larceny, burglary, and vehicle theft—over time. Each panel highlights a specific crime type, allowing for easy comparison across years. Overall, all three crimes show a steady decline from 2001 to 2016, with larceny being the most prevalent throughout the period. The consistent downward trend suggests improvements in prevention, enforcement, or broader socioeconomic factors contributing to reduced property crime rates.</p>
+         <div class='my-5'></div>
+         <h3>Proportional Breakdown of Property Crime Types (2016)</h3>
+         <div class="d-flex justify-content-center">
+            <embed src="./viz-prop-piechart (1).html"
+                   type="text/html"
+                   height="700"
+                   width="2000"
+                   style="display: block;" />
+          </div>
+         <div class='my-5'></div>
+         <p>This pie chart illustrates the proportion of total property crimes in 2016 that were attributed to each major category: larceny, burglary, and vehicle theft. Larceny overwhelmingly dominates the total, making up over 70% of all property crimes, while burglary accounts for about 19% and vehicle theft for just under 10%. This distribution emphasizes that the vast majority of property-related offenses involve theft without force or unlawful entry, distinguishing larceny as the most common form of property crime by a wide margin.</p>
+         <div class='my-5'></div>
+         <h3>Heatmap of Property Crime Totals by State and Year</h3>
+         <div class='my-5'></div>
+         <div class="col"><embed src="./viz-heatmap_property.html"
+            type="text/html" height="1000" width="1100" /> </div>
+         <p>This heatmap displays the total number of property crimes committed across all U.S. states from 2000 to 2016. Each row represents a state, while each column corresponds to a specific year. Brighter colors indicate higher crime totals. Notably, states like California, Texas, and Florida consistently show higher property crime volumes, likely reflecting their large populations.</p>
+         <div class='my-5'></div>
+     </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>

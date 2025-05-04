@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Violent Crimes</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="#">Crime and Incarceration Project</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+               <li class="nav-item"><a class="nav-link" href="Violent Crimes.html">Violent Crimes</a></li>
+               <li class="nav-item"><a class="nav-link" href="Property Crimes.html">Property Crimes</a></li>
+               <li class="nav-item"><a class="nav-link" href="Crime Type Comparison.html">Crime Type Comparison</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'></div>
+         <h1>Violent Crimes</h1>
+         <p>This page explores violent crimes specifically across the United States, focusing on how different types, such as murder, robbery, and aggravated assault, are distributed across states. By visualizing both raw counts and population-adjusted rates, this page aims to reveal which states experience higher levels of violent crime and which types are most prevalent. </p>
+         <div class='my-5'></div>
+         <h3>Violent Crime Counts by State in 2016</h3>
+         <div class="d-flex justify-content-center">
+            <embed src="./viz-violent-bar.html"
+                   type="text/html"
+                   height="700"
+                   width="2000"
+                   style="display: block;" />
+          </div>
+         <p>This bar chart shows the total number of reported violent crimes in each U.S. state in 2016, broken down by crime type: murder/manslaughter, robbery, and aggravated assault. Aggravated assault stands out as the most common violent offense in nearly every state, often by a large margin. Robbery is generally the second most frequent, while murder and manslaughter have the lowest counts overall. States like California, Texas, and New York report especially high numbers, reflecting their larger populations.</p>
+         <div class='my-5'></div>
+         <h3>Percent Breakdown of Violent Crime Types by State in 2016</h3>
+         <div class="d-flex justify-content-center">
+            <embed src="./viz-violent-bar-adjusted.html"
+                   type="text/html"
+                   height="700"
+                   width="2000"
+                   style="display: block;" />
+          </div>
+         <div class='my-5'></div>
+         <p>This stacked bar chart shows the relative proportions of each violent crime type—murder/manslaughter, robbery, and aggravated assault—within each U.S. state in 2016. Unlike the previous graph, which displayed total counts, this chart focuses on percentages to highlight how each crime type contributes to the overall violent crime profile of a state. Across nearly all states, aggravated assault makes up the largest share of violent crimes, often over 60-70%. Robbery follows as the second most common, with murder and manslaughter consistently comprising only a small fraction. In some states, however, like Idaho and Wyoming, aggravated assault makes up approximately 90% of the violent crimes committed.</p>
+         <div class='my-5'></div>
+         <h3>Overall Proportions of Violent Crime Types in 2016</h3>
+         <div class='my-5'></div>
+         <div class="d-flex justify-content-center">
+            <embed src="./viz-violent-piechart.html"
+                   type="text/html"
+                   height="700"
+                   width="2000"
+                   style="display: block;" />
+          </div>
+         <p>This pie chart visualizes the overall breakdown of violent crimes in the United States in 2016. It clearly shows that aggravated assault dominates, accounting for nearly 70% of all violent crime incidents. Robbery makes up just under 30%, while murder and manslaughter constitute a very small fraction—only about 1.5%. This distribution reinforces the insight from earlier charts: while homicide often receives the most attention, the vast majority of violent crime is driven by less fatal but still serious offenses, particularly aggravated assault.</p>
+         <div class='my-5'></div>
+     </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
